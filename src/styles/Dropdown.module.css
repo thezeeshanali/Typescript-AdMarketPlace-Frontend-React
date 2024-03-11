@@ -1,0 +1,21 @@
+/* Dropdown.module.css */
+.dropdown {
+  /* General styles for the dropdown */
+  border: 1px solid #ccc; /* Adjust border color */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 0.5rem 1rem; /* Adjust padding */
+  font-size: 16px; /* Adjust font size */
+  background-color: #fff; /* Adjust background color */
+}
+
+.dropdown:focus {
+  /* Style for focused state (optional) */
+  border-color: #999; /* Adjust border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.dropdown option {
+  /* Styles for individual options */
+  padding: 0.5rem 1rem; /* Adjust padding */
+  cursor: pointer; /* Indicate hover interaction */
+}

@@ -1,0 +1,19 @@
+/* Home.module.css */
+.container {
+  /* General container styles for layout and spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh;
+  background-color: #051c2c; /* Adjust as needed */
+}
+
+.dropdown {
+  /* Styles specifically for the Dropdown component */
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #fff;
+}

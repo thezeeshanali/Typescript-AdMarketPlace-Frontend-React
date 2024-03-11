@@ -1,0 +1,13 @@
+.error {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  background-color: #051c2c;
+  color: #fff;
+}
+
+.link {
+  display: block;
+  margin-top: 20px;
+  color: #87CEFA;
+}

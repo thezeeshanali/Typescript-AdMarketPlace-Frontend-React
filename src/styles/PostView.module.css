@@ -1,0 +1,161 @@
+/* PostView.module.css */
+.container {
+  /* margin: 0 auto; */
+  background-color: #051c2c;
+  color: white;
+  padding: 20px;
+}
+
+.commentsContainer {
+  margin: 0 auto;
+  background-color: #051c2c;
+  color: white;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRow {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.inputData {
+  flex: 1;
+  position: relative;
+}
+
+.inputData input,
+.inputData textarea {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.inputData textarea {
+  resize: none;
+}
+
+.inputData input:focus,
+.inputData textarea:focus {
+  outline: none;
+  border-bottom-color: #3498db;
+}
+
+.inputData .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.submitBtn {
+  text-align: center;
+}
+
+.submitBtn input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.submitBtn input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/*//////////////////*/
+
+.title {
+  font-size: 36px;
+  margin: 40px 0;
+}
+
+.description {
+  font-size: 18px;
+  margin: 0px 15px 40px;
+}
+
+.uiSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(57rem, 2fr));
+  gap: 15px; /* Adjust the gap between columns */
+  margin: 15px;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.commenterName {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.commentMessage {
+  font-size: 14px;
+  overflow-wrap: break-word; /* Wrap long text */
+}
+
+/* Add animation to post container */
+.postContainer {
+  animation: fadeIn 0.7s ease forwards;
+  opacity: 0;
+}
+
+/* Define the animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(80);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add a transition for smooth scrolling */
+a {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Add expand animation to each post on hover */
+.postAnimation:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.postAnimation {
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
